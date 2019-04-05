@@ -4,7 +4,7 @@ import time
 import numpy as np
 
 class hapticDriver():
-    def __init__(char_frequency=4, char_vibration_time=0.3, debug=False):
+    def __init__(self, char_frequency=4, char_vibration_time=0.3, debug=False):
         #STARTUP
         GPIO.setmode(GPIO.BCM)
         GPIO.setwarnings(False)
@@ -59,6 +59,7 @@ class hapticDriver():
             "8":[1,1,0,0,1,0],
             "9":[0,1,0,1,0,0],
             "0":[0,1,0,1,1,0],
+            " ":[0,0,0,0,0,0],
         
         }
 
