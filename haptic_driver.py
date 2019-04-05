@@ -74,7 +74,7 @@ class hapticDriver():
         motor_mask = self.letter_codes[char]
 
         if self.debug:
-            print("turning on motors: ", motors)
+            print("turning on motors: ", motor_mask)
         
         for motor_ID, enabled in zip(self.motor_GPIO_ID, motor_mask):
             if enabled:
